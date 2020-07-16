@@ -1,0 +1,74 @@
+@import '../../../variables.scss';
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../../assets/course-pictures/course2.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  background-position: top ;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.9;
+  min-height: 100vh;
+  position: relative;
+  font-family: Roboto;
+
+
+  .container {
+    position: absolute;
+    max-width: 650px;
+    width: 75%;
+    top: 50%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+      font-weight: bold;
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      margin: 0 auto;
+      max-width: 450px;
+      color: $white;
+      font-weight: bold;
+      border-color: $secondary;
+
+      p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+    }
+
+    button:hover {
+      background-color: $secondary;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../../../assets/course-pictures/course4.jpg) no-repeat fixed top !important; 
+    background-position: bottom;
+    .container {
+      max-width: 650px;
+
+      h1 {
+        font-size: 2.5rem !important;
+      }
+
+      button {
+        max-width: 450px;
+        max-width: 250px;
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

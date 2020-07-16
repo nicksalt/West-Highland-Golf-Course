@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
 @import '../../variables.scss';
 
 
 .navbar {
   position: absolute;
-  background-color: $primary;
+  background-color: $secondary;
   left: 0;
   top: 0;
   padding: 0;
@@ -77,7 +75,7 @@
 }
 .navbar .dropdown-menu {
   padding: 0;
-  background-color: $primary-trans90;
+  background-color: $secondary-trans90;
 }
 .navbar .dropdown-menu .dropdown-item {
   position: relative;
@@ -112,7 +110,7 @@
   position: fixed;
   -webkit-animation: navbar-animation 0.6s;
   animation: navbar-animation 0.6s;
-  background-color: $secondary;
+  background-color: $primary;
 }
 
   
@@ -128,14 +126,17 @@
 .navbar.fixed-top.navbar-dark .navbar-nav .nav-link::after {
   background-color: white;
 }
-
+.navbar.fixed-top.navbar-dark .dropdown-menu {
+  padding: 0;
+  background-color: $primary-trans90  ;
+}
 @media screen and (max-width: 768px) {
   .navbar-brand {
     margin-left: 20px;
   }
   .navbar-nav {
     padding: 0 20px;
-    background-color: $primary-trans90;
+    background-color: $secondary-trans90;
   }
   .navbar.fixed-top .navbar-nav {
     background: transparent;

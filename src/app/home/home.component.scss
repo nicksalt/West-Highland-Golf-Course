@@ -2,6 +2,8 @@
 
 .row{
     max-width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 .weather{
     background-color: $secondary;
@@ -18,7 +20,6 @@
     text-align: center;
     padding: 2rem;
     background-color: #f3f3f3;
-    height: 12000px;
 
     p{
         text-align: start;

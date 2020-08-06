@@ -1,9 +1,12 @@
 $primary: rgb(87, 2, 7);
 $primary-trans90: rgba(87, 2, 7, 0.90);
+$primary-trans60: rgba(87, 2, 7, 0.70);
 $primary-light: #AE0114;
 $primary-xlight: #D24B48;
+$primary-xlight-trans70: rgba(210, 75, 72, .9);
 $secondary: #7b844b;
 $secondary-trans90: rgba(123, 132, 75, 0.90);
+$secondary-trans80: rgba(123, 132, 75, 0.80);
 $secondary-trans70: rgba(123, 132, 75, 0.70);
 $secondary-dark: #392D13;
 $white: #ffffff;
@@ -12,4 +15,5 @@ $white-trans80: rgba(255, 255, 255, 0.8);
 $white-trans70: rgba(255, 255, 255, 0.7);
 $white-trans60: rgba(255, 255, 255, 0.6);
 $white-trans50: rgba(255, 255, 255, 0.5);
-$white-trans10: rgba(255, 255, 255, .1)
+$white-trans10: rgba(255, 255, 255, .1);
+$black-trans: rgba(0,0,0,.8);

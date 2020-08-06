@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+
+.about{
+    margin: 151px 2rem 2rem 2rem;
+    padding: 0;
+
+
+    .card{
+    .card-img-container{
+        text-align: center;
+        background-color: #f3f3f3;
+        padding: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .card-img{
+            width: auto;
+            max-width: 100%;
+            max-height: 40vh;
+            height: auto;
+        }
+    }
+}
+
+        .course-description{
+
+        }
+    
+
+    
+}
+
+@media(max-width:330px){
+    .about{
+        margin-top: 190px!important;
+    }
+}

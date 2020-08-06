@@ -1,1 +1,14 @@
-<app-home></app-home>
+<app-navbar></app-navbar>
+<div>
+    <router-outlet #routerOutlet="outlet"></router-outlet>
+  </div>
+<router-outlet name="home"></router-outlet>
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: <span class="fancy">West Highland Golf Course</span> 
+    | Website by <a target="_black" href="https://nicksalt.me/">Nick Salt</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>

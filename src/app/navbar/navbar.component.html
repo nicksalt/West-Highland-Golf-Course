@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a href="#" class="navbar-brand">West Highland Golf</a>
+      <a routerLink="/home" routerLinkActive="active" class="navbar-brand">
+        <img src="../../assets/logo.png" height="125" alt="">
+        <!--West Highland Golf Course-->
+      </a>
       
       <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
         <span class="menu-icon-bar"></span>
@@ -13,14 +15,14 @@
           <li class="dropdown">
             <a href="#" class="nav-item nav-link" data-toggle="dropdown">The Course</a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">About</a>
-              <a href="#" class="dropdown-item">Green Fees</a>
+              <a routerLink="/about" (click)="ToggleNavBar()" class="dropdown-item"  routerLinkActive="active">Tour</a>
+              <a href="#" class="dropdown-item" (click)="ToggleNavBar()">Green Fees</a>
             </div>
           </li>
-          <li><a href="#" class="nav-item nav-link">Leagues</a></li>
-          <li><a href="#" class="nav-item nav-link">Memberships</a></li>
-          <li><a href="#" class="nav-item nav-link">Our Sponsors</a></li>
-          <li><a href="#" class="nav-item nav-link">Contact</a></li>
+          <li><a href="#" class="nav-item nav-link" (click)="ToggleNavBar()">Leagues</a></li>
+          <li><a href="#" class="nav-item nav-link" (click)="ToggleNavBar()">Memberships</a></li>
+          <li><a href="#" class="nav-item nav-link" (click)="ToggleNavBar()">Our Sponsors</a></li>
+          <li><a href="#" class="nav-item nav-link" (click)="ToggleNavBar()">Contact</a></li>
           <!--
             <li class="dropdown">
             <a href="#" class="nav-item nav-link" data-toggle="dropdown">Services</a>
@@ -33,5 +35,4 @@
           -->
         </ul>
       </div>
-    </div>
   </nav>

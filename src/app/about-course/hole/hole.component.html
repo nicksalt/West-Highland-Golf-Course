@@ -1,0 +1,24 @@
+<div class="hole">
+
+    <div class="hole-container" [ngStyle]="{'left': isOdd ? '25%' : '75%'}">
+        <div class="hole-description">
+            <h2>Hole #{{hole.number}} - Par {{hole.par}}</h2>
+            <p>{{hole.description}}</p>
+        </div>
+        <div class="hole-yardage">
+            <h6>Yardages</h6>
+            <table class=" table hole-tees">
+                <tr>
+                    <td class="white">White</td>
+                    <td class="yellow">Yellow</td>
+
+
+                </tr>
+                    <tr>
+                        <td class="white">{{hole.mensYardage}}</td>
+                        <td class="yellow">{{hole.womensYardage}}</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+footer{
+    background-color: $secondary;
+    color: #f3f3f3;
+
+    .fancy{
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+    }
+
+    a{
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+        color:white;
+    }
+
+    a:hover{
+        color: $primary-xlight;
+    }
+}

@@ -5,6 +5,54 @@
 @import './variables.scss';
 
 
-body{
-    background-color: #f3f3f3;
+body {
+  background-color: #f3f3f3;
+}
+
+.nav-margin {
+
+  margin: calc(10vh + 1rem) 2rem 2rem 2rem;
+  padding: 0;
+  min-height: calc(90vh - 6.5rem);
+}
+
+.btn.btn-primary, .btn-primary:hover, , .btn-primary:visited {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  box-shadow: 0 0 0 0.2rem $primary-trans90!important;
+}
+.btn-primary:active{
+
+  background-color: $primary-light !important;
+}
+
+.enquire-button{
+  padding: .5rem;
+  margin: 1rem .25rem;
+}
+
+@media(max-width:290px) {
+  .nav-margin {
+    margin-top: 10rem !important;
+    min-height: calc(100vh - 17rem) !important;
+  }
+}
+
+@media(max-height: 900px) {
+  .nav-margin {
+    margin-top: 106px;
+    min-height: calc(100vh - 106px - 5.5rem) !important;
+  }
+}
+@media(max-width: 464px) {
+  .nav-margin {
+    margin-top: 106px;
+    min-height: calc(100vh - 106px - 7rem) !important;
+  }
+}
+@media(min-height: 2000) {
+  .nav-margin {
+    margin-top: 216px !important;
+    min-height: calc(100vh - 248px) !important;
+  }
 }

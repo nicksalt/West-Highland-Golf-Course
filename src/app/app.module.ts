@@ -8,7 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { AboutCourseComponent } from './about-course/about-course.component';
 import { HoleComponent } from './about-course/hole/hole.component';
-
+import { MembershipsComponent } from './memberships/memberships.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { GreenFeesComponent } from './green-fees/green-fees.component';
+import { LeaguesComponent } from './leagues/leagues.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { ContactComponent } from './contact/contact.component'
 
 @NgModule({
   declarations: [
@@ -17,12 +22,18 @@ import { HoleComponent } from './about-course/hole/hole.component';
     HomeComponent,
     HeaderComponent,
     AboutCourseComponent,
-    HoleComponent
+    HoleComponent,
+    MembershipsComponent,
+    GreenFeesComponent,
+    LeaguesComponent,
+    SponsorsComponent,
+    ContactComponent
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

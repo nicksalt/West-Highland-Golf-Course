@@ -1,0 +1,34 @@
+.row{
+    overflow: hidden; 
+}
+.enquire-button{
+    margin-top: 0rem !important;
+    margin-bottom: 2rem;
+}
+.image{
+    background: url(../../assets/course-pictures/course1.jpg) no-repeat bottom center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.memberships{
+    margin-top: 1rem;
+}
+small{
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+
+@media(max-width:405px){
+    .display-4{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:317px){
+    .display-4{
+        font-size: 2rem;
+    }
+}

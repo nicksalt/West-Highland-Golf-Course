@@ -1,23 +1,27 @@
 @import '../../variables.scss';
 
-.about{
-    margin: 151px 2rem 2rem 2rem;
-    padding: 0;
 
+@import "../../variables.scss";
 
     .card{
+        .card-title{
+            font-size: 2rem;
+        }
+        .text-muted{
+            font-family: "Lobster", cursive;
+        }
     .card-img-container{
         text-align: center;
-        background-color: #f3f3f3;
+        background-color: $black-trans10;
         padding: .5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
         
         .card-img{
             width: auto;
             max-width: 100%;
-            max-height: 40vh;
+            max-height: 50vh;
             height: auto;
         }
     }
@@ -29,10 +33,3 @@
     
 
     
-}
-
-@media(max-width:330px){
-    .about{
-        margin-top: 190px!important;
-    }
-}

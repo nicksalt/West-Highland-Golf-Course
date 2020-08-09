@@ -12,8 +12,9 @@ export class AboutCourseComponent implements OnInit {
 
   ngOnInit() {
     this.populateHoles();
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
-
   populateHoles(){
 
     this.holes = {'1' : new Hole(1, 322, 309, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "", 4),

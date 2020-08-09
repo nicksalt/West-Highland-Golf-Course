@@ -2,15 +2,13 @@
 <app-header></app-header>
 <div class="row flex-column-reverse flex-lg-row">
     <div class="col-lg-9 facebook">
-        <p><strong>Note:</strong> Once I have acquired the course's Facebook credentials the view of the facebook feed will change.</p>
-        <p>I will be using a free service called <a href="https://www.juicer.io/" target="_blank">Jucier</a> to fetch the facebook post and display them in a much more 
-            aesthetic manner similar to <a target="_blank" href="https://i.imgur.com/DPXWCOP.png">this</a>.</p>
-        <div class="fb-page" data-href="https://www.facebook.com/westhighlandgolf/" data-tabs="timeline" 
-        data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" d
-        ata-hide-cover="false" data-show-facepile="false">
-            <blockquote cite="https://www.facebook.com/westhighlandgolf/" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/westhighlandgolf/">West Highland Golf Course</a></blockquote>
-        </div>
+        <h1>
+            Latest News 
+            <a href="https://www.facebook.com/westhighlandgolf/" target="_blank">
+                <fa-icon [icon]="facebookIcon"></fa-icon>
+            </a>
+        </h1>
+<ul class="juicer-feed" data-feed-id="2021723104709214"></ul>
     </div>
     <div class="col-lg-3 weather">
         <a class="weatherwidget-io" href="https://forecast7.com/en/44d51n77d47/madoc/" 

@@ -11,15 +11,23 @@
 
     .weatherwidget-io{
        position: sticky !important; 
-       top:6rem;
+       top:9rem;
        margin: 1rem;
     }
 }
-
+.referral{
+    display: none !important;
+}
 .facebook{
-    text-align: center;
     padding: 2rem;
     background-color: #f3f3f3;
+    fa-icon{
+        color: #3B5998;
+    }
+    h1{
+        color: $primary-light;
+        padding-bottom: 1rem;
+    }
 
     p{
         text-align: start;
@@ -34,5 +42,10 @@
            top:0rem;
            margin: 1rem;
         }
+    }
+}
+@media screen and (max-width: 400px){
+    .facebook{
+        font-size: 1.8rem !important;
     }
 }

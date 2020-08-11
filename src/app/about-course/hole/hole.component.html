@@ -1,8 +1,9 @@
-<div class="hole">
+<div id={{hole.number}} class="hole" [ngStyle]="{'background': 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('+ hole.photoPath +') no-repeat ' + hole.position}">
 
     <div class="hole-container" [ngStyle]="{'left': isOdd ? '25%' : '75%'}">
         <div class="hole-description">
-            <h2>Hole #{{hole.number}} - Par {{hole.par}}</h2>
+            <h2>Hole #{{hole.number}}</h2>
+            <h5>Par {{hole.par}}</h5>
             <p>{{hole.description}}</p>
         </div>
         <div class="hole-yardage">

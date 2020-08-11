@@ -17,18 +17,18 @@ export class AboutCourseComponent implements OnInit {
   }
   populateHoles(){
 
-    this.holes = {'1' : new Hole(1, 322, 309, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "", 4),
-     '2' : new Hole(2, 270, 270, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "", 4),
-    '3' : new Hole(3, 249, 218, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",4), 
-    '4' : new Hole(4, 267, 258, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",4), 
-    '5' : new Hole(5, 124, 124, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",3),
-     '6' : new Hole(6, 278, 268, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",4),
-    '7' : new Hole(7, 318, 250, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",4),
-     '8' : new Hole(8, 200, 150, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",3),
-    '9' : new Hole(9, 284, 256, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",4), 
-    '10' : new Hole(10, 220, 220, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",4),
-    '11' : new Hole(11, 256, 250, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",4),
-     '12' : new Hole(12, 462, 457, "From the blue tees this is a 425 yard Par 5. Place your first shot and then hit across the creek to an elevated green.. From The white tees it is possible to get it over Eels creek with one good shot.", "",5)};
+    this.holes = {'1' : new Hole(1, 322, 309, "", "../../../assets/course-pictures/hole1.jpg", 4, "bottom center"), //done
+     '2' : new Hole(2, 270, 270, "", "../../../assets/course-pictures/course2.jpg", 4, "center center"), //done
+    '3' : new Hole(3, 249, 218, "", "../../../assets/course-pictures/course1.jpg",4, "center center"), //done
+    '4' : new Hole(4, 267, 258, "", "../../../assets/course-pictures/hole4-1.jpg",4, "center center"), //done
+    '5' : new Hole(5, 124, 124, "", "../../../assets/course-pictures/hole5.jpg",3, "center center"),//done
+     '6' : new Hole(6, 278, 268, "", "../../../assets/course-pictures/hole6.jpg", 4, "center center"), //done
+    '7' : new Hole(7, 318, 250, "", "../../../assets/course-pictures/course4.jpg", 4, "bottom center"),//done
+     '8' : new Hole(8, 200, 150, "", "../../../assets/course-pictures/hole4.jpg",3, "bottom center"),//done
+    '9' : new Hole(9, 284, 256, "", "../../../assets/course-pictures/course1.jpg",4, "bottom center"), 
+    '10' : new Hole(10, 220, 220, "", "../../../assets/course-pictures/hole10.jpg",4, "center center"),
+    '11' : new Hole(11, 256, 250, "", "../../../assets/course-pictures/hole11.jpg",4, "center center"),
+     '12' : new Hole(12, 462, 457, "", "../../../assets/course-pictures/hole12.jpg",5, "center center")};
 
     console.log(this.holes);
   
@@ -42,13 +42,15 @@ export class Hole {
   public description: string;
   public photoPath: string;
   public par: number;
+  public position: string;
   
-  constructor(number: number, mens: number, womens: number, description:string, path:string, par:number){
+  constructor(number: number, mens: number, womens: number, description:string, path:string, par:number , position:string){
     this.number = number;
     this.mensYardage = mens;
     this.womensYardage = womens;
     this.description = description;
     this.photoPath = path;
     this.par = par;
+    this.position = position;
   }
 }

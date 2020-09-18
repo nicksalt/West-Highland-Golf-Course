@@ -47,3 +47,6 @@ Thumbs.db
 .firebase/hosting.ZGlzdC9jb3Vyc2Utd2Vic2l0ZQ.cache
 .firebaserc
 firebase.json
+
+# private code
+/src/private

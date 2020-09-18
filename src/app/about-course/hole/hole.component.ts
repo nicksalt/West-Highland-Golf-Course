@@ -18,10 +18,6 @@ export class HoleComponent implements OnInit {
     this.isOdd = this.hole.number % 2 == 0;
   }
   
-  ngAfterViewInit(): void {
-    console.log(this.hole);
-    
-  }
 
   
 

@@ -30,7 +30,6 @@ export class AboutCourseComponent implements OnInit {
     '11' : new Hole(11, 256, 250, "", "../../../assets/course-pictures/hole11.jpg",4, "center center"),
      '12' : new Hole(12, 462, 457, "", "../../../assets/course-pictures/hole12.jpg",5, "center center")};
 
-    console.log(this.holes);
   
   }
 }

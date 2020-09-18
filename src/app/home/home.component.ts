@@ -22,10 +22,16 @@ export class HomeComponent implements OnInit {
 
   ngAfterViewChecked(): void {
     if (this.firstLoad){
-      document.querySelectorAll('.referral').forEach(function(a){
+      document.querySelectorAll('.referral').forEach((a) => {
+        a.remove();
+        })
+      document.querySelectorAll('.j-poster').forEach((a) => {
+        a.remove();
+      })
+      document.querySelectorAll('.juicer-ad').forEach((a) => {
         a.remove();
         this.firstLoad = false;
-        })
+      })
     } else
     this.firstLoad = true;
     

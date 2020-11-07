@@ -13,7 +13,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GreenFeesComponent } from './green-fees/green-fees.component';
 import { LeaguesComponent } from './leagues/leagues.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
-import { ContactComponent } from './contact/contact.component'
+import { ContactComponent } from './contact/contact.component';
+import { NewsbarComponent } from './newsbar/newsbar.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ContactComponent } from './contact/contact.component'
     GreenFeesComponent,
     LeaguesComponent,
     SponsorsComponent,
-    ContactComponent
+    ContactComponent,
+    NewsbarComponent
   ],
   imports: [ 
     BrowserModule,

@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+    @import '../../variables.scss';
 
 
 .navbar {
@@ -6,7 +6,7 @@
   padding: 0 4rem;
   background-color: $secondary;
   left: 0;
-  top: 0;
+  top: 100px;
   width: 100%;
   transition: background 0.6s ease-in;
   z-index: 99999;

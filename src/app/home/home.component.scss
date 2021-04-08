@@ -1,22 +1,50 @@
 @import '../../variables.scss';
 
 .row{
-    max-width: 100vw;
     padding: 0;
     margin: 0;
 }
-.weather{
+.sidebar{
     background-color: $secondary;
     position: relative;
 
-    .weatherwidget-io{
-       position: sticky !important; 
-       top:9rem;
+    .weather-for-course{
+    //    position: sticky !important; 
+    //    top:9rem;
        margin: 1rem;
+       margin-bottom: 2rem;
+    }    
+    .weather-for-course.fixed{
+           position: sticky !important; 
+           top:9rem;
+           margin: 1rem;
+        }
+    .sponsors{
+
+    .thank-you{
+        color: $white-trans80;
+        margin-bottom: .75rem;
+    }
+
+    .sponsors-wrapper{
+        width: 100%;
+
+        .sponsor{
+            width: 100%;
+            padding: .75rem;
+            
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 }
-.referral{
+    
+}
+.juicer-feed.white li.feed-item.juicer, .juicer-feed.user li.feed-item.juicer, .juicer-feed.juicer-widget li.feed-item.juicer, .juicer-feed.colors li.feed-item.juicer, .juicer-feed.gray li.feed-item.juicer, .juicer-feed.modern li.feed-item.juicer, .juicer-feed.polaroid li.feed-item.juicer{
     display: none !important;
+    opacity: 0 im !important;
 }
 .facebook{
     padding: 2rem;
@@ -34,13 +62,19 @@
     }
 }
 
+
+
 @media screen and (max-width: 991px){
-    .weather{
+    .sidebar{
     
         .weatherwidget-io{
            position: static; 
            top:0rem;
            margin: 1rem;
+        }
+        
+    .sponsors{
+        display: none;
         }
     }
 }

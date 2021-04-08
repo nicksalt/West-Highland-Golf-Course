@@ -1,11 +1,15 @@
 @import '../../variables.scss';
 
 .news-wrapper{
-    padding: 2rem 0.25rem;
+    padding: 1rem 0.25rem;
     margin:0 !important;
     color: $white-trans70   ;
     font-weight: bold;
     text-align: center;
     background-color: $secondary;
     border-bottom: 2px dashed $white-trans70  ;
+
+    p{
+        margin: 0;
+    }
 }

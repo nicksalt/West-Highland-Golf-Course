@@ -9,12 +9,12 @@ import { HeaderComponent } from './home/header/header.component';
 import { AboutCourseComponent } from './about-course/about-course.component';
 import { HoleComponent } from './about-course/hole/hole.component';
 import { MembershipsComponent } from './memberships/memberships.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GreenFeesComponent } from './green-fees/green-fees.component';
 import { LeaguesComponent } from './leagues/leagues.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ContactComponent } from './contact/contact.component';
-import { NewsbarComponent } from './newsbar/newsbar.component'
+import { NewsbarComponent } from './newsbar/newsbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -29,13 +29,13 @@ import { NewsbarComponent } from './newsbar/newsbar.component'
     LeaguesComponent,
     SponsorsComponent,
     ContactComponent,
-    NewsbarComponent
+    NewsbarComponent,
   ],
   imports: [ 
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

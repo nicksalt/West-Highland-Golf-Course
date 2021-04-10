@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
   <div class="container">
-      <a routerLink="/home" routerLinkActive="active" class="navbar-brand">
+      <a routerLink="/" routerLinkActive="active" class="navbar-brand">
         <img class="logo" src="../../assets/logo.png" alt="">
         <!--West Highland Golf Course-->
       </a>
@@ -13,6 +13,7 @@
       
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
+          <li><a routerLink="/covid19" routerLinkActive="active" class="nav-item nav-link" (click)="ToggleNavBar()">COVID-19</a></li>
           <li class="dropdown">
             <a class="nav-item nav-link" data-toggle="dropdown">The Course</a>
             <div class="dropdown-menu">

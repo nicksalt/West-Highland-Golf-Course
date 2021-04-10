@@ -19,7 +19,7 @@ ngOnDestroy() {
 
 scroll = (): void => {
   var scrollHeight = window.pageYOffset;
-  if(scrollHeight >= document.documentElement.clientHeight * .2)
+  if(scrollHeight >= document.documentElement.clientHeight * (1/3))
     document.querySelector('.navbar').classList.add('fixed-top');
   else if (scrollHeight == 0) 
   document.querySelector('.navbar').classList.remove('fixed-top');

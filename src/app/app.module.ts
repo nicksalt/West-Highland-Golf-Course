@@ -15,6 +15,7 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewsbarComponent } from './newsbar/newsbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Covid19Component } from './covid19/covid19.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SponsorsComponent,
     ContactComponent,
     NewsbarComponent,
+    Covid19Component,
   ],
   imports: [ 
     BrowserModule,

@@ -7,10 +7,11 @@ import { GreenFeesComponent } from './green-fees/green-fees.component';
 import { LeaguesComponent } from './leagues/leagues.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ContactComponent } from './contact/contact.component';
+import { Covid19Component } from './covid19/covid19.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   },
   {
@@ -38,9 +39,8 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
-    path: '',
-    redirectTo: "/home",
-    pathMatch: 'full'
+    path: 'covid19',
+    component: Covid19Component
   }
 ];
 
